@@ -1,0 +1,28 @@
+<script>
+  //// 1번 cm -> inch 변경
+  const input = prompt('cm 단위의 숫자를 입력하세요.')
+
+  const cm = Number(input)
+  const inch = cm / 2.54
+
+  alert(`${cm}cm는 ${inch}inch 입니다.`)
+
+
+  //// 2번 원의 반지름으로 원의 넓이와 둘레 구하기
+  const r = prompt('원의 반지름을 입력하세요.')
+
+  const a = 3.14 * r * r
+  const b = 2 * 3.14 * r
+
+  alert(`반지름이 ${r}인 원의 넓이는 ${a}, 둘레는 ${b}입니다.`)
+
+
+
+  //// 3번 환율 달러 -> 원화
+  const money = prompt('가지고 계신 달러의 금액을 입력하세요.')
+
+  const dollar = Number(money)
+  const won = dollar * 1207
+
+  alert(`현재 환율은 1$ 당 1,207원으로, ${money}는 ${won}원입니다.`)
+</script>

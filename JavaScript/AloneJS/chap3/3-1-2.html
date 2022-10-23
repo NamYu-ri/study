@@ -1,0 +1,47 @@
+<script>
+  //// 오전과 오후 구분하기
+  // 변수를 선언합니다.
+  const date = new Date()
+  const hour = date.getHours()
+
+  // if 조건문
+  if (hour < 12) {
+    // 표현식 hour < 12가 참일 때 실행
+    alert('오전입니다.')
+  }
+
+  if (hour >= 12) {
+    alert('오후입니다.')
+  }
+
+  //// 30분 이전 이후 구분하기
+  // 변수 선언
+  const date1 = new Date()
+  const minutes = date1.getMinutes()
+
+  if (minutes < 30) {
+    alert('30분 이전 입니다.')
+  }
+  if (minutes >= 30) {
+    alert('30분 이후 입니다.')
+  }
+
+
+  //// 계절 구분
+  // 변수 선언
+  const date2 = new Date()
+  const month = date2.getMonth() + 1
+  alert(month)  // 10
+  if (3 <= month && month < 6) {
+    alert('봄입니다.')
+  }
+  if (6 <= month && month < 9) {
+    alert('여름입니다.')
+  }
+  if (9 <= month && month < 12) {
+    alert('가을입니다.')
+  }
+  if (12 == month && month <= 2) {
+    alert('겨울입니다.')
+  }
+</script>
