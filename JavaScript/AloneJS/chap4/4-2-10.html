@@ -1,0 +1,14 @@
+<script>
+  // 반복문
+  for (let i = 0; true; i++) {
+    alert(i + '번째 반복입니다.')
+
+    // 진행여부를 물어봅니다.
+    const isContinue = confirm('계속 하시겠습니까?')
+    if(!isContinue) {
+      break
+    }
+  }
+  // 프로그램의 종료 확인
+  alert('프로그램 종료')
+</script>
